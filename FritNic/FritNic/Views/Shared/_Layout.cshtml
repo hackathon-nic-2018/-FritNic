@@ -20,14 +20,20 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            Home
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">
+                           Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Departamento")">Departamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Categoria")">Categoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Menu")">Menu</a>
+                    </li>
                 </ul>
             </div>
         </div>
